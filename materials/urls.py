@@ -18,3 +18,5 @@ urlpatterns = [
     path('materials/create/', LessonsCreateApiView.as_view(), name='materials_create'),
     path('materials/<int:pk>/destroy/', LessonsDestroyAPIView.as_view(), name='materials_destroy'),
     ]
+
+urlpatterns += router.urls
